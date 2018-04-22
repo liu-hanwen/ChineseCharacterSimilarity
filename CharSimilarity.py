@@ -1,3 +1,10 @@
+'''
+Author: LIU Hanwen
+Email: liu.hanwen@foxmail.com
+Github: https://github.com/liu-hanwen/
+Created Date: April 22, 2018
+'''
+
 from pypinyin import pinyin as py_pinyin
 from pypinyin import Style
 import os
@@ -112,6 +119,3 @@ def similarity(ch1, ch2, tone=True, shape=True, wpy=0.5, wst=0.1, wsj=0.2, wmatr
                 raise ValueError('Sum of shape weights should be 1.')
 
             return sum([wst*st_similarity, wsj*sj_similarity, wmatrix*m_similarity])
-
-
-print(similarity('几','凡',True,False,0.0,0.33,0.34,0.33))
