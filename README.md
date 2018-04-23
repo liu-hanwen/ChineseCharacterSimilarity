@@ -40,7 +40,7 @@ Parameters:
   - Type: Float
   - Range: 0.0 - 1.0
   
-```
+```python
 In [1]: import CharSimilarity
 
 In [2]: ch1 = '侯'
